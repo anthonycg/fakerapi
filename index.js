@@ -1,5 +1,8 @@
+const express = require("express");
 const faker = require("faker");
 console.log(faker.datatype.uuid());
+const app = express();
+const port = 8000;
 
 const generateUserObj = () => ({
   _id: faker.datatype.uuid(),
